@@ -1,5 +1,4 @@
-import { StyleSheet } from "react-native";
-
+import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -17,6 +16,26 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#DDD",
         borderRadius: 5,
-        wid
-    }
-})
+        width: "90%",
+        padding: 10,
+        fontSize: 18,
+    },
+    areaBtn: {
+        alignItems: "center",
+        flexDirection: "row",
+        marginTop: 15,
+        justifyContent: "space-around",
+    },
+    botao: {
+        height: 50,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 15,
+        borderRadius: 5,
+    },
+    botaoText: {
+        fontSize: 22,
+        color: "#FFF",
+    },
+});
+export default styles;
