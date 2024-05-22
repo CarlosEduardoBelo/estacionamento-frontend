@@ -4,8 +4,10 @@ import ProprietarioForm from './src/pages/Proprietario/ProprietarioForm';
 import ProprietarioList from './src/pages/Proprietario/ProprietarioList';
 import ProprietarioEdit from './src/pages/Proprietario/ProprietarioEdit';
 import Veiculo from './src/pages/Veiculo/VeiculoList'
+import VeiculoForm from './src/pages/Veiculo/VeiculoForm';
 import Home from './src/pages/Home'
 import { Icon, Button } from 'react-native-elements';
+import VeiculoList from './src/pages/Veiculo/VeiculoList';
 const Stack = createStackNavigator();
 const App = () => {
   return (
@@ -53,8 +55,24 @@ const App = () => {
         <Stack.Screen
           name="VeiculoList"
           component={Veiculo}
+          options={({ navigation }) => {
+            return {
+              title: "Lista de Veículos",
+              headerRight: () => (
+                <Button
+                  onPress={() => navigation.navigate("VeiculoForm")}
+                  type="clear"
+                  icon={<Icon name="add" size={25} color="white" />}
+                />
+              )
+            }
+          }}
+        />
+        <Stack.Screen
+          name="VeiculoForm"
+          component={VeiculoForm}
           options={{
-            title: 'Lista de Veículos'
+            title: 'Formulário de Veículos'
           }}
         />
       </Stack.Navigator>
