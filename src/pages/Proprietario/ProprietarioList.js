@@ -53,8 +53,8 @@ export default ProprietarioList => {
         return (
             <ListItem bottomDivider >
                 <ListItem.Content>
-                    <ListItem.Title>{data.nome}</ListItem.Title>
-                    <ListItem.Subtitle>{data.cpf}</ListItem.Subtitle>
+                    <ListItem.Title>Nome: {data.nome}</ListItem.Title>
+                    <ListItem.Subtitle>CPF: {data.cpf}</ListItem.Subtitle>
                 </ListItem.Content>
                 {getActions(data)}
             </ListItem>
