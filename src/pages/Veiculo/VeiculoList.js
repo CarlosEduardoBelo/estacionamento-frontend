@@ -38,7 +38,7 @@ export default VeiculoList => {
                         VeiculoList.navigation.navigate('VeiculoEdit', data)}
                     type="clear"
                     icon={<Icon name="edit" size={25}
-                    color="orange" />}
+                    color="blue" />}
                 />
                 <Button
                     onPress={() => handleDelete(data.id_veiculo)}
@@ -55,7 +55,7 @@ export default VeiculoList => {
             <ListItem bottomDivider >
                 <ListItem.Content>
                     <ListItem.Title>Proprietario: {data.fk_proprietario}</ListItem.Title>
-                    <ListItem.Subtitle>Placa: {data.placa}</ListItem.Subtitle>
+                    <ListItem.Subtitle>Placa: {data.placa} | Ano: {data.ano} </ListItem.Subtitle>
                 </ListItem.Content>
                 {getActions(data)}
             </ListItem>

@@ -32,8 +32,7 @@ const Home = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 100
-        //justifyContent: "center"
+        marginTop: 50,
     },
     imageContainer: {
         flex: 0.4,
@@ -50,8 +49,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     button: {
-        backgroundColor: '#3498db',
-        borderRadius: 5,
+        backgroundColor: '#a6480d',
+        borderRadius: 10,
         width: '80%',
         alignItems: 'center',
         margin: '20px',

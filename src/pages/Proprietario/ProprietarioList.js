@@ -38,7 +38,7 @@ export default ProprietarioList => {
                     onPress={() =>
                         ProprietarioList.navigation.navigate('ProprietarioEdit', data)}
                     type="clear"
-                    icon={<Icon name="edit" size={25} color="orange" />}
+                    icon={<Icon name="edit" size={25} color="blue" />}
                 />
                 <Button
                     onPress={() => handleDelete(data.id_proprietario)}

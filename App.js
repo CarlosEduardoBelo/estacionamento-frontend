@@ -25,7 +25,7 @@ const App = () => {
                 <Button
                   onPress={() => navigation.navigate("ProprietarioForm")}
                   type="clear"
-                  icon={<Icon name="add" size={25} color="white" />}
+                  icon={<Icon name="add" size={30} color="white" />}
                 />
               )
             }
@@ -62,7 +62,7 @@ const App = () => {
                 <Button
                   onPress={() => navigation.navigate("VeiculoForm")}
                   type="clear"
-                  icon={<Icon name="add" size={25} color="white" />}
+                  icon={<Icon name="add" size={30} color="white" />}
                 />
               )
             }
