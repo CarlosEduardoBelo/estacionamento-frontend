@@ -26,24 +26,24 @@ export default function VeiculoForm() {
     return (
         <SafeAreaView style={styles.container}>
             <View style={{ alignItems: "center" }}>
-                <Text style={styles.text}>Digite sua placa</Text>
+                <Text style={styles.text}>Digite a placa do veículo</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="Digite sua placa"
+                    placeholder="Insira a placa"
                     value={placa}
                     onChangeText={(texto) => setPlaca(texto)}
                 />
-                <Text style={styles.text}>Digite o ano do seu carro</Text>
+                <Text style={styles.text}>Digite o ano do veículo</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="Digite o ano do seu carro"
+                    placeholder="Insira o ano"
                     value={ano}
                     onChangeText={(texto) => setAno(texto)}
                 />
-                <Text style={styles.text}>Digite a mensalidade do seu carro</Text>
+                <Text style={styles.text}>Digite a mensalidade do veículo</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="Digite a mensalidade do seu carro"
+                    placeholder="Insira a mensalidade"
                     value={mensalidade}
                     onChangeText={(texto) => setMensalidade(texto)}
                 />

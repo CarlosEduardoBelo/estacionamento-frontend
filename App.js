@@ -7,7 +7,7 @@ import Veiculo from './src/pages/Veiculo/VeiculoList'
 import VeiculoForm from './src/pages/Veiculo/VeiculoForm';
 import Home from './src/pages/Home'
 import { Icon, Button } from 'react-native-elements';
-import VeiculoList from './src/pages/Veiculo/VeiculoList';
+import VeiculoEdit from './src/pages/Veiculo/VeiculoEdit';
 const Stack = createStackNavigator();
 const App = () => {
   return (
@@ -73,6 +73,13 @@ const App = () => {
           component={VeiculoForm}
           options={{
             title: 'Formulário de Veículos'
+          }}
+        />
+        <Stack.Screen
+          name="VeiculoEdit"
+          component={VeiculoEdit}
+          options={{
+            title: 'Formulário de Edição'
           }}
         />
       </Stack.Navigator>
