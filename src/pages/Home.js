@@ -53,10 +53,12 @@ const styles = StyleSheet.create({
         width: '80%',
         alignItems: 'center',
         margin: '20px',
+        padding: 10
     },
     buttonText: {
         color: '#fff',
-        fontSize: 18,
+        fontSize: 24,
+        fontWeight: "600"
     },
 });
 export default Home;
