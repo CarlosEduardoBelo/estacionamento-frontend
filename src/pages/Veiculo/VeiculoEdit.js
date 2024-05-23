@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, SafeAreaView, Pressable } from 'react-native';
+import { View, Text, TextInput, SafeAreaView, Pressable, } from 'react-native';
 import axios from 'axios';
 import styles from './styles.js';
 
@@ -69,7 +69,7 @@ export default ({ route, navigation }) => {
                     onPress={handleClick} >
                     <Text style={styles.botaoText}>Alterar</Text>
                 </Pressable >
-                
+
             </View>
         </SafeAreaView>
     )
